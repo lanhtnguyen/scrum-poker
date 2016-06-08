@@ -7,7 +7,7 @@
 
 .large {
 	margin: .3em .2em .3em .2em;
-	font-size: 2.5em;
+	font-size: 2.2em;
 	line-height: 50px !important;
 	width: 90px !important;
 }
@@ -44,7 +44,7 @@
 }
 
 .coffee{
-	height: 33vw;
+	height: 32vw;
 	width: 36vw;
 	content: url(../img/coffeebreak.png);
 }
