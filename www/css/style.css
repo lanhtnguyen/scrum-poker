@@ -1,0 +1,49 @@
+.spaces {
+	margin: .2em .3em .3em .3em;
+	font-size: 2em;
+	line-height: 80px !important;
+	width: 90px !important;
+}
+
+.large {
+	margin: .3em .2em .3em .2em;
+	font-size: 2.5em;
+	line-height: 50px !important;
+	width: 90px !important;
+}
+
+.bottom-pane {
+	position: static;
+	width: 100%;
+	bottom: 5%;
+	height: 21%;
+}
+
+.left-panel{
+	background-color: WhiteSmoke;
+	height: 100%;
+	float: left;
+	width: 50%;
+	margin: 0px 0px 0px 2.5em;
+	/*box-shadow: 0 0 15px gray;*/
+}
+
+.right-panel{
+	background-color: WhiteSmoke;
+	height: 100%;
+	float: right;
+	width: 50%;
+	margin: 0px 2.5em 0px 0px;
+	/*box-shadow: 0 0 15px gray;*/}
+
+.coffee{
+	height: 32vw;
+	width: 35vw;
+	content: url(../img/coffeebreak.png);
+}
+
+.bbreak{
+	height: 32vw;
+	width: 35vw;
+	content: url(../img/paper.png);
+}
