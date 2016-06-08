@@ -29,21 +29,24 @@
 }
 
 .right-panel{
-	background-color: WhiteSmoke;
+	background-color: whitesmoke;
 	height: 100%;
 	float: right;
 	width: 50%;
 	margin: 0px 2.5em 0px 0px;
-	/*box-shadow: 0 0 15px gray;*/}
-
-.coffee{
-	height: 32vw;
-	width: 35vw;
-	content: url(../img/coffeebreak.png);
+	/*box-shadow: 0 0 15px gray;*/
 }
 
 .bbreak{
-	height: 32vw;
-	width: 35vw;
+	height: 33vw;
+	width: 37vw;
 	content: url(../img/paper.png);
 }
+
+.coffee{
+	height: 33vw;
+	width: 36vw;
+	content: url(../img/coffeebreak.png);
+}
+
+
