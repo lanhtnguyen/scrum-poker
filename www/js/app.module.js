@@ -13,7 +13,9 @@ var app = angular.module('pkr', ['ionic', 'pkr.main', 'ngCordova'])
     });
   })
 
-  .controller('AppCtrl', function($scope, $cordovaCamera) {
+  .controller('AppCtrl', function($scope, $cordovaCamera, $ionicModal) {
+    $scope.createModal();
+
     $scope.takeImage = function() {
         var options = {
             quality: 80,
@@ -32,6 +34,22 @@ var app = angular.module('pkr', ['ionic', 'pkr.main', 'ngCordova'])
         }, function(err) {
             // error
         });
+    }
+
+    $scope.createModal = function(){
+      $ionicModal.fromTemplateUrl('selection.html', {
+        scope: $scope,
+        animation: 'slide-in-up'
+      }).then(function(modal) {
+        $scope.modal = modal;         
+      })
+    }
+    $scope.openModal = function(){
+      $scope.module.show();
+    }
+
+    $scope.closeModal = function(){
+      $scope.module.hide();
     }
 
   })

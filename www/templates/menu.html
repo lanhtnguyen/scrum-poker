@@ -71,15 +71,21 @@
         </ion-item>
 
         <label class="item">
-        <button class="button button-block button-positive" ng-click="takeImage() ">
-        Take Image
+        <button class="button button-full button-positive" ng-click="takeImage()">
+        Take Photo
         </button>
+
+        <button class="button button-full button-positive" ng-click="openModal()">
+        Modal Desu
+        </button>
+
+
         </label> 
-        <img ng-src="{{srcImage}}" id="srcImage" width="100% " height="100%" style="display: block; margin: 0 auto;"/><br/>
 
 
 
-
+        <img ng-src="{{srcImage}}" id="srcImage" width="100% " height="100%" style="display: block; margin: 0 auto;"/>
+        
       </ion-list>
     </ion-content>
   </ion-side-menu>
