@@ -35,7 +35,7 @@ var app = angular.module('pkr', ['ionic', 'pkr.main', 'ngCordova'])
             // error
         });
     }
-
+ /*
     $scope.createModal = function(){
       $ionicModal.fromTemplateUrl('selection.html', {
         scope: $scope,
@@ -53,7 +53,7 @@ var app = angular.module('pkr', ['ionic', 'pkr.main', 'ngCordova'])
     }
 
   })
-
+*/
   
 
   .config(function($stateProvider, $urlRouterProvider) {
