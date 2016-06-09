@@ -38,6 +38,7 @@ var app = angular.module('pkr', ['ionic', 'pkr.main', 'ngCordova'])
             // targetHeight: 250,
             popoverOptions: CameraPopoverOptions,
             saveToPhotoAlbum: true,
+            correctOrientation: true
         };
          
         $cordovaCamera.getPicture(options).then(function(imageData) {
