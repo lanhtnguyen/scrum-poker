@@ -49,10 +49,19 @@
 	content: url(../img/coffeebreak.png);
 }
 
-/*
 .cover{
+	/*background-color: #0039A6;*/
+	background-color: #444;
+	color: white;
+	text-align: center;
+	line-height: 500px;
+	font-size: 50px;
+	font-family: Arial;
 	height: 100%;
 	width: 100%;
-	showImage: false;
 }
-*/
+
+.icon{
+	width: 100%;
+	height: 100%;
+}

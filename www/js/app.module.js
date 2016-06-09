@@ -14,19 +14,30 @@ var app = angular.module('pkr', ['ionic', 'pkr.main', 'ngCordova'])
   })
 
   .controller('AppCtrl', function($scope, $cordovaCamera, $ionicModal) {
+    
+    $scope.createModal = function(){
+      $ionicModal.fromTemplateUrl('templates/selection.html', {
+        scope: this,
+        animation: 'slide-in-up'
+      }).then(function(modal) {
+        $scope.modal = modal;
+      })
+    }   
+   
+   
     $scope.createModal();
 
     $scope.takeImage = function() {
         var options = {
-            quality: 80,
+            quality: 100,
             destinationType: Camera.DestinationType.DATA_URL,
             sourceType: Camera.PictureSourceType.CAMERA,
             allowEdit: true,
             encodingType: Camera.EncodingType.JPEG,
-            targetWidth: 250,
-            targetHeight: 250,
+            // targetWidth: 250,
+            // targetHeight: 250,
             popoverOptions: CameraPopoverOptions,
-            saveToPhotoAlbum: true
+            saveToPhotoAlbum: true,
         };
          
         $cordovaCamera.getPicture(options).then(function(imageData) {
@@ -35,25 +46,18 @@ var app = angular.module('pkr', ['ionic', 'pkr.main', 'ngCordova'])
             // error
         });
     }
- /*
-    $scope.createModal = function(){
-      $ionicModal.fromTemplateUrl('selection.html', {
-        scope: $scope,
-        animation: 'slide-in-up'
-      }).then(function(modal) {
-        $scope.modal = modal;         
-      })
-    }
-    $scope.openModal = function(){
-      $scope.module.show();
+
+
+    $scope.showModal = function(){
+      $scope.modal.show();
     }
 
     $scope.closeModal = function(){
-      $scope.module.hide();
+      $scope.modal.hide();
     }
 
   })
-*/
+
   
 
   .config(function($stateProvider, $urlRouterProvider) {
@@ -78,13 +82,12 @@ var app = angular.module('pkr', ['ionic', 'pkr.main', 'ngCordova'])
       })
 
 
-      // Remove if doesn't work
-      // .state('app.main', {
-      //   url: '/main',
+      // .state('app.modal', {
+      // url: '/app',
       //   views: {
       //     'menuContent': {
       //       templateUrl: 'templates/selection.html',
-      //       controller: 'MainCtrl'
+      //       controller: 'AppCtrl'
       //     }
       //   }
       // })
