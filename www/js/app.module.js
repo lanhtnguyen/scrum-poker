@@ -49,9 +49,20 @@ var app = angular.module('pkr', ['ionic', 'pkr.main', 'ngCordova'])
     }
 
 
-    $scope.showModal = function(){
-      $scope.modal.show();
-    }
+    // $scope.showModal = function(){
+    //   $scope.modal.show();
+    // }
+
+    $scope.selectNumber = function(e){
+        e.preventDefault();
+
+        $scope.number.modal('hide')
+            .on('hidden.bs.modal', function (e) {
+                $('selection').modal('show');
+                $(this).off('hidden.bs.modal');
+            });
+
+    };
 
     $scope.closeModal = function(){
       $scope.modal.hide();
