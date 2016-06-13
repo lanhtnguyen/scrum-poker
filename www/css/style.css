@@ -50,8 +50,8 @@
 }
 
 .cover{
-	/*background-color: #0039A6;*/
-	background-color: #444;
+	background-color: #0039A6;
+	/*background-color: black;*/
 	color: white;
 	text-align: center;
 	line-height: 500px;
@@ -67,9 +67,14 @@
 }
 
 .number{
-	background: red;
+	background: #F9461C;
 	color: white;
 	text-align: center;
-	line-height: 500px;
-	font-size: 60px;
+	line-height: 800%;
+	font-size: 90px;
+	height: 100%;
+	width: 100%;
+	font-family: Arial;
+
+
 }

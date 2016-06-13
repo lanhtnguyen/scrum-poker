@@ -18,7 +18,7 @@ var app = angular.module('pkr', ['ionic', 'pkr.main', 'ngCordova'])
     $scope.createModal = function(){
       $ionicModal.fromTemplateUrl('templates/selection.html', {
         scope: this,
-        animation: 'slide-in-up'
+        animation: 'slide-in-up',
       }).then(function(modal) {
         $scope.modal = modal;
       })
@@ -32,10 +32,8 @@ var app = angular.module('pkr', ['ionic', 'pkr.main', 'ngCordova'])
             quality: 100,
             destinationType: Camera.DestinationType.DATA_URL,
             sourceType: Camera.PictureSourceType.CAMERA,
-            allowEdit: true,
+            allowEdit: false,
             encodingType: Camera.EncodingType.JPEG,
-            // targetWidth: 250,
-            // targetHeight: 250,
             popoverOptions: CameraPopoverOptions,
             saveToPhotoAlbum: true,
             correctOrientation: true
@@ -49,24 +47,28 @@ var app = angular.module('pkr', ['ionic', 'pkr.main', 'ngCordova'])
     }
 
 
-    // $scope.showModal = function(){
-    //   $scope.modal.show();
-    // }
-
-    $scope.selectNumber = function(e){
-        e.preventDefault();
-
-        $scope.number.modal('hide')
-            .on('hidden.bs.modal', function (e) {
-                $('selection').modal('show');
-                $(this).off('hidden.bs.modal');
-            });
-
-    };
+    $scope.showModal = function(n){
+      $scope.modal.show(n);
+      $scope.selectedNumber = n;
+    }
 
     $scope.closeModal = function(){
       $scope.modal.hide();
     }
+
+
+
+  //   $scope.selectNumber = function(e){
+  //       e.preventDefault();
+
+  //       $scope.number.modal('hide')
+  //           .on('hidden.bs.modal', function (e) {
+  //               $('selection').modal('show');
+  //               $(this).off('hidden.bs.modal');
+  //           });
+
+  //   };
+
 
   })
 

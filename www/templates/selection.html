@@ -1,5 +1,16 @@
 <ion-modal-view>
-    <ion-content class="cover" ng-click="closeModal()">
-       <img ng-src="{{srcImage}}" id="srcImage" width="100% " height="100%" style="display: block; margin: 0 auto;"/>
+    <ion-content class="number" ng-click="closeModal()">
+        <img class="cover" ng-click="closeModal()" ng-src="{{srcImage}}" id="srcImage" width="100% " height="100%" style="display: block; margin: 0 auto;"/>
+        <div>
+            <div ng-if="selectedNumber >= 0">
+            {{selectedNumber}}
+            </div>
+            <!--<div ng-if="selectedNumber = a">
+                
+            </div>
+            <div ng-if="selectedNumber = b">
+
+            </div>-->
+        </div>
     </ion-content>
 </ion-modal-view>
