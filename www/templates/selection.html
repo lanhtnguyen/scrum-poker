@@ -2,15 +2,15 @@
     <ion-content class="number" ng-click="closeModal()">
         <img class="cover" ng-click="closeModal()" ng-src="{{srcImage}}" id="srcImage" width="100% " height="100%" style="display: block; margin: 0 auto;"/>
         <div>
-            <div ng-if="selectedNumber >= 0">
+            <div *ng-if="selectedNumber <= 100">
             {{selectedNumber}}
             </div>
-            <!--<div ng-if="selectedNumber = a">
-                
+            <div *ng-if="selectedNumber == 200" >
+             A
             </div>
-            <div ng-if="selectedNumber = b">
-
-            </div>-->
+            <div *ng-if="selectedNumber == 300">
+            B
+            </div>
         </div>
     </ion-content>
 </ion-modal-view>

@@ -19,6 +19,7 @@ var app = angular.module('pkr', ['ionic', 'pkr.main', 'ngCordova'])
       $ionicModal.fromTemplateUrl('templates/selection.html', {
         scope: this,
         animation: 'slide-in-up',
+        keyboard: true,
       }).then(function(modal) {
         $scope.modal = modal;
       })
