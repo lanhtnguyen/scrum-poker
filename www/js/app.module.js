@@ -57,20 +57,6 @@ var app = angular.module('pkr', ['ionic', 'pkr.main', 'ngCordova'])
       $scope.modal.hide();
     }
 
-
-
-  //   $scope.selectNumber = function(e){
-  //       e.preventDefault();
-
-  //       $scope.number.modal('hide')
-  //           .on('hidden.bs.modal', function (e) {
-  //               $('selection').modal('show');
-  //               $(this).off('hidden.bs.modal');
-  //           });
-
-  //   };
-
-
   })
 
   
@@ -95,17 +81,6 @@ var app = angular.module('pkr', ['ionic', 'pkr.main', 'ngCordova'])
           }
         }
       })
-
-
-      // .state('app.modal', {
-      // url: '/app',
-      //   views: {
-      //     'menuContent': {
-      //       templateUrl: 'templates/selection.html',
-      //       controller: 'AppCtrl'
-      //     }
-      //   }
-      // })
 
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/app/main');

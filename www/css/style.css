@@ -20,7 +20,7 @@
 }
 
 .left-panel{
-	background-color: whitesmoke;
+	background-color: white;
 	height: 100%;
 	float: left;
 	width: 50%;
@@ -29,7 +29,7 @@
 }
 
 .right-panel{
-	background-color: whitesmoke;
+	background-color: white;
 	height: 100%;
 	float: right;
 	width: 50%;
@@ -52,11 +52,12 @@
 .cover{
 	background-color: #0039A6;
 	/*background-color: black;*/
-	color: white;
+	background-image: url(../img/theB.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center; 
 	text-align: center;
 	line-height: 500px;
-	font-size: 50px;
-	font-family: Arial;
 	height: 100%;
 	width: 100%;
 }
@@ -65,11 +66,35 @@
 	background: #F9461C;
 	color: white;
 	text-align: center;
-	line-height: 800%;
+	line-height:300%;
 	font-size: 90px;
 	height: 100%;
 	width: 100%;
-	font-family: Arial;
+}
 
+.paper-cover{
+	background-color: #F9461C;
+	background-image: url(../img/paper.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center; 
+	text-align: center;
+	line-height: 500px;
+	height: 100%;
+	width: 100%;
+}
 
+.coffee-cover{
+	background-color: #F9461C;
+	background-image: url(../img/coffeebreak.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center; 
+	line-height: 500px;
+	height: 100%;
+	width: 100%;
+}
+
+[alt]{
+	display: no !important;
 }
