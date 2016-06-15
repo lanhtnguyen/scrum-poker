@@ -2,7 +2,9 @@
     <ion-content class="number" ng-click="closeModal()">
         <img class="cover" ng-click="closeModal()" ng-src="{{srcImage}}" id="srcImage" width="100% " height="100%" style="display: block; margin: 0 auto;"/>
             <div>
-                <div ng-if="selectedNumber <= 100 || selectedNumber === '∞'"> {{selectedNumber}} </div>
+                <div ng-if="selectedNumber <= 100 || selectedNumber === '∞'"> 
+                    {{selectedNumber}} 
+                </div>
                 <div ng-if="selectedNumber === 200">
                     <img src="img/paper.png" height="100%" width="100%" alt=" "/>
                 </div>
