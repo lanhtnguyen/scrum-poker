@@ -30,7 +30,7 @@ var app = angular.module('pkr', ['ionic', 'pkr.main', 'ngCordova'])
 
     $scope.takeImage = function() {
         var options = {
-            quality: 100,
+            quality: 90,
             destinationType: Camera.DestinationType.DATA_URL,
             sourceType: Camera.PictureSourceType.CAMERA,
             allowEdit: false,
